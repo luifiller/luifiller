@@ -4,16 +4,17 @@
 ```javascript
 import { Psychology } from @university/saoJudasTadeu;
 import { SystemAnalisysAndDevelopment } from @university/saoPauloTechSchool;
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-lui',
   templateUrl: './my-life.component.html',
   styleUrls: ['./my-life.component.css']
 })
-export class LuiComponent implements OnInit {
+export class LuiComponent {
   about: string =
-    'Psychologist and researcher venturing out and programming his present and future';
+    'Psychologist and researcher venturing out and 
+      programming his present and future';
 
   programmingLanguages: Array<string> = ['HTML', 'CSS', 'JS', 'TS', 'SQL'];
 
@@ -23,14 +24,6 @@ export class LuiComponent implements OnInit {
     { leisure: ['Coffee', 'Plants + Nature', 'Photography'] },
     { academic: ['Behavioral Analysis', 'Intimacy'] },
   ];
-
-  ngOnInit(): void {
-    console.log(`
-      ${this.about}. Always learning more about ${this.programmingLanguages} and 
-      ${this.frameworks} \n
-      Living a good life, but always looking to improve it.
-    `);
-  }
 }
 
 ```
