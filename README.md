@@ -7,21 +7,38 @@ import { SystemAnalisysAndDevelopment } from @university/saoPauloTechSchool;
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-lui',
-  templateUrl: './my-life.component.html',
-  styleUrls: ['./my-life.component.css']
+  selector: 'lui-life',
+  templateUrl: './lui-life.component.html',
+  styleUrls: ['./lui-life.component.scss']
 })
 export class LuiComponent {
-  about: string =
+  public about: string =
     'Psychologist and researcher venturing out and 
       programming his present and future';
 
-  programmingLanguages: Array<string> = ['HTML', 'CSS', 'JS', 'TS', 'SQL'];
+  public development: { [area: string]: { [tech: string]: string[] }[] } = {
+    frontend: [
+      { code: ['HTML', 'CSS', 'Sass', 'Javascript', 'Typescript', 'Node.JS'] },
+      { angular: ['RxJS', 'Jest', 'Karma', 'Jasmine', 'Material', 'Webpack'] },
+      { react: ['JSX'] },
+    ],
+    backend: [
+      { code: ['Java'] },
+      { framework: ['Spring Boot'] },
+    ],
+    others: [
+      { ides: ['VSCode', 'Intellij', 'Android Studio'] },
+      { database: ['MySQL', 'Azure'] },
+      { cloud: ['AWS EC2'] },
+      { analytics: ['GA4', 'Firebase'] },
+      { iot: ['Arduino'] },
+      { design: ['Figma'] },
+      { methodologies: ['Scrum', 'Lean'] },
+    ],
+  };
 
-  frameworks: string = 'Angular';
-
-  hobbies = [
-    { leisure: ['Coffee', 'Plants + Nature', 'Photography'] },
+  public hobbies: { [category: string]: string[] }[] = [
+    { leisure: ['Coffee', 'Plants & Nature', 'Photography'] },
     { academic: ['Behavioral Analysis', 'Intimacy'] },
   ];
 }
@@ -54,5 +71,3 @@ export class LuiComponent {
   <img height="150em" src="https://github-readme-stats.vercel.app/api?username=luifiller&show_icons=true&theme=dark&include_all_commits=true&count_private=true"/>
   <img height="150em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=luifiller&layout=compact&langs_count=7&theme=dark"/>
 </div>
-
-![Snake animation](https://github.com/luifiller/luifiller/blob/output/github-contribution-grid-snake.svg)
