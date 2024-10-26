@@ -2,19 +2,21 @@
 <img align='right' src="https://img.freepik.com/vetores-gratis/homem-operacional-laptop-icone-dos-desenhos-animados-ilustracao-pessoas-conceito-de-icone-de-negocios-isolado-estilo-flat-cartoon_138676-1803.jpg?w=740" width="220">
 
 ```javascript
-import { Psychology } from @university/saoJudasTadeu;
-import { SystemAnalisysAndDevelopment } from @university/saoPauloTechSchool;
+import { Psychology } from @university/sao-judas-tadeu;
+import { SystemAnalisysAndDevelopment } from @university/sao-paulo-tech-school;
 import { Component } from '@angular/core';
 
 @Component({
   selector: 'lui-life',
+  standalone: true,
   templateUrl: './lui-life.component.html',
-  styleUrls: ['./lui-life.component.scss']
+  styleUrls: ['./lui-life.component.scss'],
 })
-export class LuiComponent {
+export class LuiLifeComponent {
   public about: string =
-    'Psychologist and researcher venturing out and 
-      programming his present and future';
+    "A fullstack developer committed to adding value at
+      every stage of a solution's life, from conception to
+      support, with a focus on customer needs and data-driven decisions.";
 
   public development: { [area: string]: { [tech: string]: string[] }[] } = {
     frontend: [
@@ -23,17 +25,17 @@ export class LuiComponent {
       { react: ['JSX'] },
     ],
     backend: [
-      { code: ['Java'] },
-      { framework: ['Spring Boot'] },
+      { code: ['C#', 'Java'] },
+      { framework: ['.NET', 'Entity Framework', 'Spring Boot'] },
     ],
     others: [
-      { ides: ['VSCode', 'Intellij', 'Android Studio'] },
-      { database: ['MySQL', 'Azure'] },
-      { cloud: ['AWS EC2'] },
+      { cloud: ['AWS'] },
       { analytics: ['GA4', 'Firebase'] },
+      { database: ['MySQL', 'Azure'] },
       { iot: ['Arduino'] },
+      { ides: ['VSCode', 'Intellij', 'Android Studio'] },
       { design: ['Figma'] },
-      { methodologies: ['Scrum', 'Lean'] },
+      { methodologies: ['Scrum', 'Lean', 'Kanban'] },
     ],
   };
 
@@ -50,7 +52,7 @@ export class LuiComponent {
 <img align='right' src="https://dynamic.thoughtworks.com/landing_pages/image0-3bfa4977dcfc3a69f0b4c2addd210880.jpeg" width="200">
 <div>
   <figure>
-    <h3 align="left">inspirational phrase:</h3>  
+    <h3 align="left">Inspirational phrase:</h3>  
       <blockquote> <p>“Any fool can write code that a computer can understand. Good programmers write code that humans can understand.”</p> </blockquote>
       <figcaption>― Martin Fowler, <cite>Refactoring: Improving the Design of Existing Code (1999, p. 15)</cite></figcaption>
   </figure>
@@ -61,7 +63,7 @@ export class LuiComponent {
   <h3 align="left">You can find me at:</h3>
     <p align="left">
       <a href=mailto:"luizf.silva@sptech.school" target="blank"><img align="center" src="https://img.shields.io/badge/Microsoft_Outlook-0078D4?style=for-the-badge&logo=microsoft-outlook&logoColor=white" alt="luiz nison filler"/></a>
-      <a href="https://www.linkedin.com/in/luiz-nison-filler-17997113b/" target="blank"><img align="center" src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="luiz nison filler"/></a>
+      <a href="https://www.linkedin.com/in/luiz-nison-filler-17997113b/" target="_blank"><img align="center" src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="luiz nison filler"/></a>
     </p>
 </div>
   
