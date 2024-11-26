@@ -2,8 +2,8 @@
 <img align='right' src="https://img.freepik.com/vetores-gratis/homem-operacional-laptop-icone-dos-desenhos-animados-ilustracao-pessoas-conceito-de-icone-de-negocios-isolado-estilo-flat-cartoon_138676-1803.jpg?w=740" width="220">
 
 ```javascript
-import { Psychology } from @university/sao-judas-tadeu;
-import { SystemAnalisysAndDevelopment } from @university/sao-paulo-tech-school;
+import { Psychology } from '@university/sao-judas-tadeu';
+import { SystemAnalisysAndDevelopment } from '@university/sao-paulo-tech-school';
 import { Component } from '@angular/core';
 
 @Component({
